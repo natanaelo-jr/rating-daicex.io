@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Sinuca DAICEX</title>
     
 </head>
-    <body>
-            <div class="titlediv">
-                <h1>Ranking Sinuca DAICEX</h1>
-            </div>
-            <div class="flex-centered">
-                <table class="tablestyle">
-                    <thead>
-                        <tr class="topline">
-                            <th class="td">Jogador</th>
-                            <th class="td">Rating</th>
+    <body class="bg-zinc-900">
+        <div class="flex justify-center flex-grow-1">
+            <div class="flex-col">
+                <div class="text-2xl font-semibold uppercase text-zinc-100">
+                    <h1>Ranking Sinuca DAICEX</h1>
+                </div>
+
+                <div class="">
+                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg max-w-lg">
+                    <table class="w-full">
+                        <thead class="bg-zinc-800 text-zinc-300">
+                            <div class="">
+                            <tr class="">
+                                <th class="p-2 text-left ml-2">Jogador</th>
+                                <th class="p-2 text-left ml-2">Rating</th>
+                            </tr>
+                            </div>
+                            
+                        </thead>
+                        <tr id="root" class="text-zinc-400">
+                            <script src="index.js"></script>
+
                         </tr>
-                        
-                    </thead>
-                    <tr id="root""></tr>
-                </table>
+                    </table>
+                </div>
             </div>
-        <script src="index.js"></script>
+        </div>
     </body>
     
 </html>
