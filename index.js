@@ -11,7 +11,7 @@ function fetchData(){
             return res.json();
         })
         .then((data) => {
-            data.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr class="tr"><td class="td">${element.name}</td><td  class="td">${element.rating}</td></tr>`));
+            data.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td class="text-zinc-500 p-2">${element.name}</td><td  class="text-zinc-500">${element.rating}</td></tr>`));
         }
         )
         .catch((error) => 
